@@ -13,7 +13,7 @@ var Examples = React.createClass({
 //Option #2 - Arrow function
 var Examples = (props) => {
   return (
-    <h3>Examples</h3>
+    <h3>Examples!</h3>
   )
 };
 module.exports = Examples;
