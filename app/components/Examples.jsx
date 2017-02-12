@@ -13,7 +13,11 @@ var Examples = React.createClass({
 //Option #2 - Arrow function
 var Examples = (props) => {
   return (
-    <h3>Examples!</h3>
+    <div>
+      <h3>Examples!</h3>
+      <p>Welcome to examples page!</p>
+    </div>
+
   )
 };
 module.exports = Examples;
