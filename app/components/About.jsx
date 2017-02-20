@@ -14,7 +14,7 @@ var About = React.createClass({
 //Option #2 - With Arrow function
 var About = (props) => { //Arrow function instead of Anonimus function function(props){}
   return (
-    <h3>About component</h3>
+    <h3>About</h3>
   )
 };
 module.exports = About;
