@@ -1,5 +1,21 @@
+var webpack = require('webpack');//Load webpack utilities to use for the "plugins" section
+
 module.exports = {
-  entry: './app/app.jsx',
+  entry: [
+    'script!jquery/dist/jquery.min.js',//The "script! is for the script-loader to update the scripts files as a package in the webconfig file"
+    'script!foundation-sites/dist/foundation.min.js',
+    './app/app.jsx'
+  ],
+  externals: {
+    jquery: 'jQuery'
+  },
+  //Tells that when we see '$' or 'jQuery' replace them with jquery module
+  plugins: [
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'jQuery': 'jquery'
+    })
+  ],
   output: {
     path: __dirname,
     filename: './public/bundle.js'

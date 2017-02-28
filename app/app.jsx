@@ -11,6 +11,11 @@ var Main = require('Main');
 var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
+//Load foundation-sites
+require('style!css!foundation-sites/dist/foundation.min.css');
+//style! is for injecting the css to our html, must be before the css!!
+//css! use the css-loader to load the css file
+$(document).foundation();//To start/activate the foundation
 
 ReactDOM.render(
   <Router history={hashHistory}>
