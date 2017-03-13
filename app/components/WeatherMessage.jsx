@@ -17,7 +17,7 @@ var WeatherMessage = React.createClass({
 //Using ES6 instead of the (props)&var we can write ({temp, location}) directly!!!
 var WeatherMessage = ({temp, location}) => {
 return (
-  <h3>It is {temp} in {location}.</h3>
+  <h3 className="text-center">It is {temp} in {location}.</h3>
 )
 };
 module.exports = WeatherMessage;
