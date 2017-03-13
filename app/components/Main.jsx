@@ -22,11 +22,12 @@ var Main = (props) => {
       <div>
         <Nav/>
         <div className="row">
-          <div className="columns medium-6 large-4 small-centered">//small default is 12 (all screen)
+          <div className="columns medium-6 large-4 small-centered">
             {props.children}
           </div>
         </div>
       </div>
   ) //Need to delete "this." before the props because it is passed as an argument in the function
+    //Grid system - Small default is 12 (all screen)
 };
 module.exports = Main;
