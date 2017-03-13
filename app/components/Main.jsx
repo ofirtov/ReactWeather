@@ -21,8 +21,11 @@ var Main = (props) => {
   return (
       <div>
         <Nav/>
-        <h2>Main Component</h2>
-        {props.children}
+        <div className="row">
+          <div className="columns medium-6 large-4 small-centered">//small default is 12 (all screen)
+            {props.children}
+          </div>
+        </div>
       </div>
   ) //Need to delete "this." before the props because it is passed as an argument in the function
 };
